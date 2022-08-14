@@ -34,18 +34,13 @@ const getClientById = (request, response, next) => {
 const updateClient = (request, response, next) => {
   Client.findOne({ _id: request.params.id })
     .then((data) => {
-      // console.log(data);
-      // console.log(request.body);
       for (let item in request.body) {
-        // console.log(item);
         if (["password", "isBlocked"].includes(item)) {
-          // throw new Error("Change data not Authorize")
           continue;
         } else if (["postalCode", "city", "address", "state"].includes(item)) {
           data["address"][item] = request.body[item];
         } else if (item == "analytics") {
           for (let nestedItem in request.body[item]) {
-            // console.log(nestedItem, "from Analytics");// !handling
             if (["earnings", "jobs", "hours", "views"].includes(nestedItem)) {
               data["analytics"][nestedItem] =
                 request.body["analytics"][nestedItem];
@@ -64,8 +59,6 @@ const updateClient = (request, response, next) => {
 };
 
 const uploadImage = (request, response, next) => {
-  // if (!request.file) throw new Error("There is no image uploaded");
-
   const file = request.file;
   const imgPath = `${request.protocol}://${request.hostname}:${process.env.PORT
     }/${request.file.path.replaceAll("\\", "/")}`;

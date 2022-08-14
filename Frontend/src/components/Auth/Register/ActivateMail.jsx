@@ -56,30 +56,48 @@ function ActivateMail() {
 
   // :userType/:vToken
   return (
-    <div className=" row justify-content-center align-content-center vh-100 ">
-      <div className="col-11 col-md-8 col-lg-6 p-5 rounded bg-dark text-light text-center">
-        {error !== "" ? (
-          <div className="alert alert-danger" role="alert">
-            {`${error}`}
-          </div>
-        ) : (
-          ""
-        )}
-        {params.vToken ? (
-          <>
-            <p>Are Your sure for confirmation?! </p>
+    <div className="container-fluid loginContainer">
+      <div className=" row justify-content-center align-content-center vh-100">
+        <div
+          className="col-11 col-md-8 col-lg-6 p-5 rounded text-center "
+          style={{
+            color: `var(--blue)`,
+            "font-weight": "bolder",
+            "font-size": "1.3em",
+            fontFamily: "Courgette",
+            lineHeight: 2,
+          }}
+        >
+          {error !== "" ? (
+            <div className="alert alert-danger" role="alert">
+              {`${error}`}
+            </div>
+          ) : (
+            ""
+          )}
+          {params.vToken ? (
+            <>
+              <p>Are Your sure for confirmation?! </p>
 
-            <button className="btn btn-success mt-4" onClick={confirmEmail}>
-              confirm
-            </button>
-          </>
-        ) : (
-          <p>
-            Email verification link has been sent to your mail, kindly activate
-            your account. Please follow the instruction in the email message to
-            activate your Account.
-          </p>
-        )}
+              <button
+                style={{
+                  background: `var(--beige)`,
+                  border: "none",
+                }}
+                className="btn btn-success mt-4"
+                onClick={confirmEmail}
+              >
+                confirm
+              </button>
+            </>
+          ) : (
+            <p>
+              Email verification link has been sent to your mail, kindly
+              activate your account. Please follow the instruction in the email
+              message to activate your Account.
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

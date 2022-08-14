@@ -16,8 +16,6 @@ const mg = mailgun({ apiKey: api_key, domain: DOMAIN });
 let signUp = (req, res, next) => {
   let User, payload;
 
-
-
   req.params.userType == "freelancer"
     ? (User = Freelancer)
     : req.params.userType == "company" ? User = Company :
@@ -42,11 +40,7 @@ let signUp = (req, res, next) => {
 
   User.findOne({ email })
     .then((user) => {
-
-      // if (user) throw new Error("User is already registered!");
       if (user) throw new Error("User is already registered!");
-
-
 
       // Email Verification
       let token = jwt.sign(payload, process.env.SECRET_KEY, {
@@ -96,7 +90,7 @@ let activateAccount = (req, res, next) => {
   const { token } = req.body;
   let User;
 
-  console.log("====>", token); //! d
+  console.log("====>", token);
 
   req.params.userType == "freelancer"
     ? (User = Freelancer)
@@ -150,7 +144,7 @@ let activateAccount = (req, res, next) => {
 const userLogin = (req, res, next) => {
   let User;
 
-  console.log(req.body, "<=====") //!
+  console.log(req.body, "<=====")
 
   req.params.userType == "freelancer"
     ? (User = Freelancer)
@@ -274,7 +268,6 @@ let resetPassword = (req, res, next) => {
   const { resetLink, newPassword } = req.body;
   if (!resetLink) next(new Error("Authentication Error!!"));
 
-
   let User;
   req.params.userType == "freelancer"
     ? (User = Freelancer)
@@ -286,8 +279,6 @@ let resetPassword = (req, res, next) => {
           : null;
 
   try {
-
-
     User.findOne({ resetLink }, { password: 1 })
       .then((user) => {
         if (!user) next(new Error("User with this token doesn't exist!"));
