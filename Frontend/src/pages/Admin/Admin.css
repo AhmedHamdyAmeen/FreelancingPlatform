@@ -1,0 +1,12 @@
+.AdminContainer {
+  background-color: var(--lightBlue);
+}
+
+.AdminContainer .adminLinkControls {
+  background: var(--blue);
+  width: 50vh;
+}
+
+/* .AdminContainer .adminLinkControls button {
+  background: var(--beige);
+} */

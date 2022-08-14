@@ -1,0 +1,45 @@
+.fc-blue {
+  color: var(--blue) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-lightBlue {
+  background-color: var(--lightBlue);
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.bg-lightBeige {
+  background-color: var(--lightBeige);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  border: none;
+  box-shadow: 2px 2px 5px var(--lightBlue), -2px -2px 5px var(--lightBlue);
+}
+
+button:focus {
+  box-shadow: none;
+}

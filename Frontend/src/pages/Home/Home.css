@@ -1,0 +1,365 @@
+/** Start Landing */
+
+img {
+  max-width: 100%;
+}
+
+.landing {
+  background: var(--lightBlue);
+}
+
+
+.coverImg {
+  background: url('../../../public/assets/img/p-2.jpg');
+  background-size: cover;
+  border-radius: 200px 100px;
+  -webkit-border-radius: 200px 100px;
+  -moz-border-radius: 200px 100px;
+  -ms-border-radius: 200px 100px;
+  -o-border-radius: 200px 100px;
+}
+
+.landingHead h5 {
+  color: var(--beige);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.landingHead h2 {
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.landingHead h2 span {
+  color: var(--blue);
+}
+
+.landingHead h4 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: var(--gray);
+}
+
+.imgContainer {
+  display: block;
+  overflow-x: hidden;
+
+}
+
+.imgContainer img {
+  width: 80px;
+  margin-top: -50px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.imgContainer img:nth-child(1) {
+  left: 0px;
+}
+
+.imgContainer img:nth-child(2) {
+  left: 50px;
+}
+
+.imgContainer img:nth-child(3) {
+  left: 100px;
+}
+
+.imgContainer img:nth-child(4) {
+  left: 150px;
+}
+
+.imgContainer img:nth-child(5) {
+  left: 200px;
+}
+
+.imgContainer img:nth-child(6) {
+  left: 250px;
+}
+
+.imgContainer img:nth-child(7) {
+  left: 300px;
+}
+
+.landingHead button {
+  background: var(--blue);
+  border: none;
+}
+
+.landingHead button:hover {
+  background: var(--gray);
+
+}
+
+.landingHead li {
+  list-style: none;
+  font-size: 1.2em;
+  color: var(--gray);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.landingHead li::before {
+  position: absolute;
+  content: '*';
+  color: wheat;
+  left: -30px;
+  font-weight: 800;
+  background: var(--blue);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* * Start Features  */
+.features {
+  background: #f0eaea;
+}
+
+.features .dotedBG {
+  background: url('../../../public/assets/img/dotGrid.png');
+  background-size: cover;
+  width: 330px;
+  height: 400px;
+  filter: grayscale(40%) opacity(10%);
+  -webkit-filter: grayscale(40%) opacity(10%);
+}
+
+.features i {
+  background: var(--lightBeige);
+  padding: 10px;
+  font-size: 3em;
+  color: var(--gray);
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.features .featuresTitle {
+  color: var(--blue);
+  text-shadow: -10px -10px 12px var(--beige);
+  font-family: 'Courgette', cursive;
+}
+
+.features .featureDesc {
+  color: var(--gray);
+  font-size: 1.4em;
+}
+
+.features .featureDesc span {
+  color: var(--blue);
+  font-size: 1.44em;
+  font-family: 'Lobster', cursive;
+}
+
+/* * Start Customer */
+
+.customer>div {
+  gap: 20px;
+}
+
+.customer h3 {
+  color: var(--blue);
+  font-size: 1.4em;
+}
+
+.customer img {
+  width: 200px;
+  filter: opacity(70%);
+  -webkit-filter: opacity(70%);
+}
+
+@media (max-width: 567px) {
+  .customer img {
+    width: 100px;
+  }
+}
+
+/* Hero */
+.hero .heroCover {
+  /* height: 150px; */
+
+}
+
+.hero .heroImg {
+  width: 100px;
+  height: 100px;
+  top: -80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero .hourRate {
+  font-weight: bold;
+  right: 20px;
+  top: -20px;
+  background: #fff;
+  padding: 5px 15px;
+  box-shadow: 2px 2px 10px #333;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero .skills {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.hero .skills span {
+  background: var(--lightBeige);
+  display: inline-block;
+}
+
+.hero button {
+  background: var(--gray);
+}
+
+.hero .heroText h2:nth-of-type(1) {
+  font-family: 'Courgette', cursive;
+}
+
+.hero p {
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+.hero .heroText p span {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* Start Learn */
+
+.learn {
+  background: #f0eaea;
+}
+
+.learn img {
+  height: 180px;
+}
+
+.learn h1 {
+  color: var(--beige);
+  font-size: 1.9em;
+  font-family: 'Lobster', cursive;
+}
+
+/* Start Footer */
+.footer {
+  background: var(--lightBlue);
+}
+
+.footer .arrowToUp {
+  right: 10px;
+  bottom: 0px;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  background: var(--beige);
+  display: inline-flex;
+  color: var(--blue);
+}
+
+.footer .logo {
+  font-family: 'Courgette', cursive;
+  color: var(--blue);
+  font-weight: bolder;
+  font-size: 2.2em;
+}
+
+.footer p {
+  font-size: 0.9em;
+  line-height: 1.8;
+  color: var(--gray);
+}
+
+.footer h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+
+.footer ul li a:hover {
+  color: var(--beige);
+  font-weight: 800;
+  padding-left: 10px;
+}
+
+.footer .social {
+  gap: 10px;
+}
+
+.footer .social span {
+  font-size: 1.5em;
+  color: var(--blue);
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+
+.footer .social span:hover {
+  transform: scale(1.2) rotate(10deg);
+  -webkit-transform: scale(1.2) rotate(10deg);
+  -moz-transform: scale(1.2) rotate(10deg);
+  -ms-transform: scale(1.2) rotate(10deg);
+  -o-transform: scale(1.2) rotate(10deg);
+}
+
+.footer .social span:nth-child(1):hover {
+  color: #1877f2;
+}
+
+.footer .social span:nth-child(2):hover {
+  color: #e1306c;
+}
+
+.footer .social span:nth-child(3):hover {
+  color: #0077b5;
+}
+
+.footer .social span:nth-child(4):hover {
+  color: #e60023;
+}
+
+.footer .social span:nth-child(5):hover {
+  color: #1769ff;
+}

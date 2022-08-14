@@ -1,0 +1,8 @@
+.description {
+  word-break: break-word;
+}
+
+.materialCard {
+  box-shadow: var(--grey) 1px 1px 5px 1px;
+  position: relative;
+}

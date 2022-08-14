@@ -1,0 +1,17 @@
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectedStar {
+  color: var(--blue);
+}
+
+.unselectedStar {
+  color: var(--lightBlue);
+}
+
+.stars {
+  cursor: pointer;
+}

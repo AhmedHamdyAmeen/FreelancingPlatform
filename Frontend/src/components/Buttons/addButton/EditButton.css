@@ -1,0 +1,8 @@
+.button {
+  background-color: var(--transparent);
+  border: none;
+  border-radius: 25px;
+  padding: 6px;
+  color: var(--white); 
+  box-shadow: var(--white) -3px -3px 15px inset;
+}

@@ -1,0 +1,150 @@
+@import "../../../index.css";
+
+.recruiterImage {
+  border-radius: 50%;
+  width: 30px;
+}
+.show {
+  opacity: 0%;
+  transition: all 0.5s;
+}
+.show:hover {
+  opacity: 100%;
+}
+.projectCard {
+  border-color: var(--lightBlue);
+}
+.cardTitle {
+  font-weight: bold;
+  color: var(--blue);
+  text-decoration: none;
+}
+.cardTitle:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.lightText {
+  color: var(--beige);
+}
+
+.cardFooter span {
+  color: var(--blue);
+}
+.cardFooter i {
+  color: var(--beige);
+}
+
+.date {
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.cardBody {
+  font-size: 15px;
+  font-weight: light;
+}
+.cardFooter {
+  border-color: var(--lightBlue);
+}
+
+.cardFooter span :first-child {
+  color: var(--beige);
+  margin-left: 10px;
+}
+
+.cardMiddle {
+  border-color: var(--lightBlue);
+  background-color: var(--lightBlue);
+}
+.connects {
+  font-size: 16px;
+  font-weight: bold;
+}
+.connects span {
+  font-size: 12px;
+}
+.skills ul li {
+  color: var(--blue);
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  list-style-type: none;
+  border-radius: 20px;
+  min-width: 70px;
+  height: 27px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0.25px 0.25px 2px grey, -0.25px -0.25px 2px grey;
+}
+.category {
+  color: var(--blue);
+  font-weight: bold;
+}
+.cardText {
+  font-size: 15px;
+}
+.projectsBtn {
+  border-radius: 20px;
+  /* background-color: var(--beige); */
+  color: var(--beige);
+  border: 2px solid var(--beige);
+  /* margin: 10px 0; */
+}
+
+.projectsBtn:hover {
+  border-radius: 20px;
+  background-color: var(--beige);
+  color: var(--white);
+  border: 2px solid var(--beige);
+}
+.projectsBtn:focus {
+  border-radius: 20px;
+  background-color: var(--beige);
+  color: var(--white);
+  border: 2px solid var(--beige);
+}
+.projectsBtnActive {
+  border-radius: 20px;
+  background-color: var(--beige);
+  color: var(--white);
+  border: 2px solid var(--beige);
+}
+.projectsBtnActive:hover {
+  border-radius: 20px;
+  background-color: var(--beige);
+  color: var(--white);
+  border: 2px solid var(--beige);
+}
+.updateBtn {
+  width: 100px;
+  border-radius: 20px;
+  /* background-color: var(--beige); */
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  /* margin: 10px 0; */
+}
+.updateBtn:hover {
+  border-radius: 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--blue);
+}
+
+.deleteBtn {
+  width: 100px;
+  border-radius: 20px;
+  /* background-color: var(--beige); */
+  color: var(--bs-danger);
+  border: 2px solid var(--bs-danger);
+  /* margin: 10px 0; */
+}
+.deleteBtn:hover {
+  border-radius: 20px;
+  background-color: var(--bs-danger);
+  color: var(--white);
+  border: 2px solid var(--bs-danger);
+}
+
+.favourite:hover {
+  cursor: pointer;
+}

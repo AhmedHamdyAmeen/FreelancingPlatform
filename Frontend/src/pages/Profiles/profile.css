@@ -1,0 +1,39 @@
+.subTitle {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: var(--white);
+  background-color: var(--beige);
+  padding: 0.2em 1em;
+  font-size: 12px;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.tags {
+  border-radius: 15px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.infoP,
+.infoContainer {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.infoContainer {
+  color: black;
+  background-color: var(--lightBlue);
+  box-shadow: var(--grey) 5px 5px 25px 1px;
+}
+.infoTags {
+  height: 6em;
+}
+ *{
+  font-size: medium;
+ }

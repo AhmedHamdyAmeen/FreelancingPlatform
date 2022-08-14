@@ -1,0 +1,80 @@
+/* .bgGray {
+  background-color: #282c34;
+  color: white;
+} */
+
+.passwordWrapper .eyeIcon {
+  right: 20px;
+  top: 6px;
+  color: #8e8787;
+}
+
+
+/* Start Login */
+
+/* label {
+  color: var(--blue);
+  font-weight: 500,
+} */
+
+.loginContainer {
+  overflow: hidden;
+  background: var(--lightBlue);
+}
+
+
+
+.infoArea {
+  background: url("../../../../public/assets/img/login-BG.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.infoArea .rotatedDiv {
+  background: linear-gradient(45deg, var(--beige), var(--blue));
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  z-index: 2;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
+
+.infoArea .loginGreeting {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  border-radius: 50px;
+  box-shadow:
+    5px 5px 15px #595a5bac,
+    -5px -5px 15px #595a5bac;
+}
+
+.infoArea .loginGreeting h1 {
+  font-family: 'Lobster', cursive;
+  color: var(--blue);
+}
+
+.infoArea .loginGreeting p {
+  font-size: 1.3em;
+  width: 70%;
+  font-weight: 400;
+
+}

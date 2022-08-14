@@ -1,0 +1,27 @@
+.card {
+  border-top: 4px solid var(--beige);
+  height: fit-content;
+}
+
+.input {
+  border-radius: 15px;
+  background-color: var(--lightBlue);
+}
+.input:focus {
+  border-radius: 15px;
+  background-color: var(--lightBlue);
+  border-color: var(--beige);
+  box-shadow: 0px 0px 3px var(--beige), -0px -0px 3px var(--beige);
+}
+
+.formCheck label {
+  color: var(--blue);
+}
+.formCheck input:checked {
+  background-color: var(--beige);
+  border-color: var(--beige);
+}
+.formCheck input:focus {
+  box-shadow: none;
+  border-color: var(--beige);
+}

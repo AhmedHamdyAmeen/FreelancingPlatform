@@ -1,0 +1,8 @@
+.button {
+  background-color: var(--white);
+  border: 2px solid var(--beige);
+  border-radius: 20px;
+  padding: 6px;
+  color: var(--beige); 
+  /* box-shadow: var(--white) -3px -3px 10px 1px inset; */
+}

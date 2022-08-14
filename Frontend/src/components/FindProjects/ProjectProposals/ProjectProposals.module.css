@@ -1,0 +1,8 @@
+.talent {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.talent span {
+  margin-left: 5px;
+  font-weight: normal;
+}

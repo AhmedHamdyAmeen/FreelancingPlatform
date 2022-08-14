@@ -1,0 +1,22 @@
+.card {
+  border-top: 4px solid var(--beige);
+  height: fit-content;
+}
+
+.btnFAQ {
+  background-color: var(--beige);
+  color: var(--white);
+  border-color: var(--beige);
+}
+.btnFAQ:hover {
+  background-color: transparent;
+  color: var(--beige);
+  border-color: var(--beige);
+}
+.p {
+  font-size: 12px;
+  padding: 0 10px;
+}
+h5 {
+  font-weight: bold;
+}

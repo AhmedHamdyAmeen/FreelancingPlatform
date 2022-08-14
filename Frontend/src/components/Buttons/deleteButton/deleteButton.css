@@ -1,0 +1,7 @@
+.deletebutton {
+  background-color: var(--transparent);
+  border: none;
+  padding: 3px;
+  color: var(--grey);
+  height: 10px;
+}

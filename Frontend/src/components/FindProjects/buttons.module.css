@@ -1,0 +1,31 @@
+.regularBeige {
+  background-color: var(--beige);
+  border-color: var(--beige);
+  color: var(--white);
+}
+.regularBeige:hover {
+  background-color: var(--white);
+  border-color: var(--beige);
+  color: var(--beige);
+}
+.submit {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+}
+.submit:hover {
+  background-color: var(--white);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.cancel {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--white);
+}
+.cancel:hover {
+  background-color: var(--white);
+  border-color: var(--grey);
+  color: var(--grey);
+}
